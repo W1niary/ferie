@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Ferie Zimowe</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1>LICZNIK:</h1>
+<a href='http://www.counterliczniki.com'>www.counterliczniki.com</a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=70af4d53ea68c21160d60c4bedd71593f17e2be4'></script>
+<script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/1145107/t/3"></script>
+</header>
+<div class="snow"></div>
+<script>
+function createSnowflake() {
+  const snow = document.createElement("div");
+  snow.classList.add("snow");
+  snow.style.left = `${Math.random() * 100}vw`;
+  snow.style.animationDuration = `${Math.random() * 3 + 2}s`;
+  snow.innerText = "❄️";
+  document.body.appendChild(snow);
+  snow.addEventListener("animationend", () => {
+    snow.remove();
+  });
+}
+setInterval(createSnowflake, 1000);
+</script>
+<div class="gif">
+<h1>Jej FERIE!</h1>
+<img src="cat-car.gif" alt="DUBIDUBIDABADABA">
+
+</div>
+</body>
+</html>

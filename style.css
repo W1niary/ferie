@@ -1,0 +1,36 @@
+body{
+	background-color:rgb(12, 197, 255);
+}
+header{
+	background-color:rgb(0, 85, 255);
+	text-align: center;
+	color:rgb(0, 210, 255);
+}
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+.gif{
+	text-align:center;
+	color:rgb(0, 85, 255);
+}
+
+
+.snow {
+  position: fixed;
+  font-size: 20px;
+  color: #fff;
+  user-select: none;
+  animation: snowfall 5s linear infinite;
+}
+
+
+.snow::before {
+  content: "❄️";
+}
